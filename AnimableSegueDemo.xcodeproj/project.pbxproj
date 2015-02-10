@@ -13,44 +13,31 @@
 		9B574E0C1A88F83100EFCBBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0A1A88F83100EFCBBE /* Main.storyboard */; };
 		9B574E0E1A88F83100EFCBBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0D1A88F83100EFCBBE /* Images.xcassets */; };
 		9B574E111A88F83100EFCBBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0F1A88F83100EFCBBE /* LaunchScreen.xib */; };
-		9B574E1D1A88F83100EFCBBE /* AnimableSegueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E1C1A88F83100EFCBBE /* AnimableSegueTests.m */; };
+		9B574E2B1A88FF9F00EFCBBE /* AnimableSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */; };
+		9B574E2C1A88FF9F00EFCBBE /* PresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		9B574E171A88F83100EFCBBE /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9B574DF51A88F83100EFCBBE /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9B574DFC1A88F83100EFCBBE;
-			remoteInfo = AnimableSegue;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		9B574DFD1A88F83100EFCBBE /* AnimableSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimableSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimableSegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B574E011A88F83100EFCBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B574E021A88F83100EFCBBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9B574E041A88F83100EFCBBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9B574E051A88F83100EFCBBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9B574E071A88F83100EFCBBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9B574E081A88F83100EFCBBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9B574E021A88F83100EFCBBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9B574E041A88F83100EFCBBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B574E051A88F83100EFCBBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9B574E071A88F83100EFCBBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = ViewController.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B574E081A88F83100EFCBBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = ViewController.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		9B574E0B1A88F83100EFCBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B574E0D1A88F83100EFCBBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B574E101A88F83100EFCBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9B574E161A88F83100EFCBBE /* AnimableSegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimableSegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B574E1B1A88F83100EFCBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B574E1C1A88F83100EFCBBE /* AnimableSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimableSegueTests.m; sourceTree = "<group>"; };
+		9B574E1C1A88F83100EFCBBE /* AnimableSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AnimableSegueTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9B574E271A88FF9F00EFCBBE /* AnimableSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AnimableSegue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AnimableSegue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9B574E291A88FF9F00EFCBBE /* PresentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PresentSegue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PresentSegue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9B574DFA1A88F83100EFCBBE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B574E131A88F83100EFCBBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,8 +59,7 @@
 		9B574DFE1A88F83100EFCBBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B574DFD1A88F83100EFCBBE /* AnimableSegue.app */,
-				9B574E161A88F83100EFCBBE /* AnimableSegueTests.xctest */,
+				9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,6 +67,7 @@
 		9B574DFF1A88F83100EFCBBE /* AnimableSegue */ = {
 			isa = PBXGroup;
 			children = (
+				9B574E261A88FF9F00EFCBBE /* Segue */,
 				9B574E041A88F83100EFCBBE /* AppDelegate.h */,
 				9B574E051A88F83100EFCBBE /* AppDelegate.m */,
 				9B574E071A88F83100EFCBBE /* ViewController.h */,
@@ -119,12 +106,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9B574E261A88FF9F00EFCBBE /* Segue */ = {
+			isa = PBXGroup;
+			children = (
+				9B574E271A88FF9F00EFCBBE /* AnimableSegue.h */,
+				9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */,
+				9B574E291A88FF9F00EFCBBE /* PresentSegue.h */,
+				9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */,
+			);
+			path = Segue;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B574DFC1A88F83100EFCBBE /* AnimableSegue */ = {
+		9B574DFC1A88F83100EFCBBE /* AnimableSegueDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegue" */;
+			buildConfigurationList = 9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueDemo" */;
 			buildPhases = (
 				9B574DF91A88F83100EFCBBE /* Sources */,
 				9B574DFA1A88F83100EFCBBE /* Frameworks */,
@@ -134,28 +132,10 @@
 			);
 			dependencies = (
 			);
-			name = AnimableSegue;
+			name = AnimableSegueDemo;
 			productName = AnimableSegue;
-			productReference = 9B574DFD1A88F83100EFCBBE /* AnimableSegue.app */;
+			productReference = 9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */;
 			productType = "com.apple.product-type.application";
-		};
-		9B574E151A88F83100EFCBBE /* AnimableSegueTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9B574E231A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueTests" */;
-			buildPhases = (
-				9B574E121A88F83100EFCBBE /* Sources */,
-				9B574E131A88F83100EFCBBE /* Frameworks */,
-				9B574E141A88F83100EFCBBE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9B574E181A88F83100EFCBBE /* PBXTargetDependency */,
-			);
-			name = AnimableSegueTests;
-			productName = AnimableSegueTests;
-			productReference = 9B574E161A88F83100EFCBBE /* AnimableSegueTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -164,18 +144,14 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Bruno Berisso";
+				ORGANIZATIONNAME = "Bruno Berisso at Tryolabs";
 				TargetAttributes = {
 					9B574DFC1A88F83100EFCBBE = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
-					9B574E151A88F83100EFCBBE = {
-						CreatedOnToolsVersion = 6.1.1;
-						TestTargetID = 9B574DFC1A88F83100EFCBBE;
-					};
 				};
 			};
-			buildConfigurationList = 9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegue" */;
+			buildConfigurationList = 9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegueDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -188,8 +164,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B574DFC1A88F83100EFCBBE /* AnimableSegue */,
-				9B574E151A88F83100EFCBBE /* AnimableSegueTests */,
+				9B574DFC1A88F83100EFCBBE /* AnimableSegueDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -205,13 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9B574E141A88F83100EFCBBE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -219,29 +187,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B574E2B1A88FF9F00EFCBBE /* AnimableSegue.m in Sources */,
 				9B574E091A88F83100EFCBBE /* ViewController.m in Sources */,
 				9B574E061A88F83100EFCBBE /* AppDelegate.m in Sources */,
 				9B574E031A88F83100EFCBBE /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9B574E121A88F83100EFCBBE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9B574E1D1A88F83100EFCBBE /* AnimableSegueTests.m in Sources */,
+				9B574E2C1A88FF9F00EFCBBE /* PresentSegue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		9B574E181A88F83100EFCBBE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9B574DFC1A88F83100EFCBBE /* AnimableSegue */;
-			targetProxy = 9B574E171A88F83100EFCBBE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9B574E0A1A88F83100EFCBBE /* Main.storyboard */ = {
@@ -345,7 +299,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimableSegue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AnimableSegueDemo;
 			};
 			name = Debug;
 		};
@@ -355,48 +309,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimableSegue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		9B574E241A88F83100EFCBBE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AnimableSegueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimableSegue.app/AnimableSegue";
-			};
-			name = Debug;
-		};
-		9B574E251A88F83100EFCBBE /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = AnimableSegueTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AnimableSegue.app/AnimableSegue";
+				PRODUCT_NAME = AnimableSegueDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegue" */ = {
+		9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegueDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B574E1E1A88F83100EFCBBE /* Debug */,
@@ -405,19 +325,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegue" */ = {
+		9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B574E211A88F83100EFCBBE /* Debug */,
 				9B574E221A88F83100EFCBBE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		9B574E231A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9B574E241A88F83100EFCBBE /* Debug */,
-				9B574E251A88F83100EFCBBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
