@@ -124,7 +124,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0610;
-				ORGANIZATIONNAME = "Bruno Berisso at Tryolabs";
+				ORGANIZATIONNAME = Tryolabs;
 				TargetAttributes = {
 					9B574DFC1A88F83100EFCBBE = {
 						CreatedOnToolsVersion = 6.1.1;

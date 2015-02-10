@@ -3,7 +3,7 @@
 //  AnimatedSegue
 //
 //  Created by Bruno Berisso on 2/9/15.
-//  Copyright (c) 2015 Bruno Berisso. All rights reserved.
+//  Copyright (c) 2015 Tryolabs. All rights reserved.
 //
 
 #import "AppDelegate.h"

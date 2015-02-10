@@ -1,9 +1,9 @@
 //
 //  TWPresentSegue.h
-//  ttwick
+//  AnimatedSegue
 //
 //  Created by Bruno Berisso on 9/16/14.
-//  Copyright (c) 2014 Bruno Berisso. All rights reserved.
+//  Copyright (c) 2014 Tryolabs. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
