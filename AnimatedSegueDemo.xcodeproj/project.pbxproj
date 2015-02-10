@@ -13,12 +13,12 @@
 		9B574E0C1A88F83100EFCBBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0A1A88F83100EFCBBE /* Main.storyboard */; };
 		9B574E0E1A88F83100EFCBBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0D1A88F83100EFCBBE /* Images.xcassets */; };
 		9B574E111A88F83100EFCBBE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B574E0F1A88F83100EFCBBE /* LaunchScreen.xib */; };
-		9B574E2B1A88FF9F00EFCBBE /* AnimableSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */; };
+		9B574E2B1A88FF9F00EFCBBE /* AnimatedSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E281A88FF9F00EFCBBE /* AnimatedSegue.m */; };
 		9B574E2C1A88FF9F00EFCBBE /* PresentSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimableSegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B574DFD1A88F83100EFCBBE /* AnimatedSegueDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedSegueDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B574E011A88F83100EFCBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9B574E021A88F83100EFCBBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = main.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		9B574E041A88F83100EFCBBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AppDelegate.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
@@ -28,10 +28,8 @@
 		9B574E0B1A88F83100EFCBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9B574E0D1A88F83100EFCBBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B574E101A88F83100EFCBBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		9B574E1B1A88F83100EFCBBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9B574E1C1A88F83100EFCBBE /* AnimableSegueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AnimableSegueTests.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
-		9B574E271A88FF9F00EFCBBE /* AnimableSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AnimableSegue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
-		9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AnimableSegue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		9B574E271A88FF9F00EFCBBE /* AnimatedSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AnimatedSegue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		9B574E281A88FF9F00EFCBBE /* AnimatedSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AnimatedSegue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 		9B574E291A88FF9F00EFCBBE /* PresentSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = PresentSegue.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = PresentSegue.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
 /* End PBXFileReference section */
@@ -50,8 +48,7 @@
 		9B574DF41A88F83100EFCBBE = {
 			isa = PBXGroup;
 			children = (
-				9B574DFF1A88F83100EFCBBE /* AnimableSegue */,
-				9B574E191A88F83100EFCBBE /* AnimableSegueTests */,
+				9B574DFF1A88F83100EFCBBE /* AnimatedSegue */,
 				9B574DFE1A88F83100EFCBBE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,12 +56,12 @@
 		9B574DFE1A88F83100EFCBBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */,
+				9B574DFD1A88F83100EFCBBE /* AnimatedSegueDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9B574DFF1A88F83100EFCBBE /* AnimableSegue */ = {
+		9B574DFF1A88F83100EFCBBE /* AnimatedSegue */ = {
 			isa = PBXGroup;
 			children = (
 				9B574E261A88FF9F00EFCBBE /* Segue */,
@@ -77,7 +74,7 @@
 				9B574E0F1A88F83100EFCBBE /* LaunchScreen.xib */,
 				9B574E001A88F83100EFCBBE /* Supporting Files */,
 			);
-			path = AnimableSegue;
+			path = AnimatedSegue;
 			sourceTree = "<group>";
 		};
 		9B574E001A88F83100EFCBBE /* Supporting Files */ = {
@@ -89,28 +86,11 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		9B574E191A88F83100EFCBBE /* AnimableSegueTests */ = {
-			isa = PBXGroup;
-			children = (
-				9B574E1C1A88F83100EFCBBE /* AnimableSegueTests.m */,
-				9B574E1A1A88F83100EFCBBE /* Supporting Files */,
-			);
-			path = AnimableSegueTests;
-			sourceTree = "<group>";
-		};
-		9B574E1A1A88F83100EFCBBE /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9B574E1B1A88F83100EFCBBE /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		9B574E261A88FF9F00EFCBBE /* Segue */ = {
 			isa = PBXGroup;
 			children = (
-				9B574E271A88FF9F00EFCBBE /* AnimableSegue.h */,
-				9B574E281A88FF9F00EFCBBE /* AnimableSegue.m */,
+				9B574E271A88FF9F00EFCBBE /* AnimatedSegue.h */,
+				9B574E281A88FF9F00EFCBBE /* AnimatedSegue.m */,
 				9B574E291A88FF9F00EFCBBE /* PresentSegue.h */,
 				9B574E2A1A88FF9F00EFCBBE /* PresentSegue.m */,
 			);
@@ -120,9 +100,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9B574DFC1A88F83100EFCBBE /* AnimableSegueDemo */ = {
+		9B574DFC1A88F83100EFCBBE /* AnimatedSegueDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueDemo" */;
+			buildConfigurationList = 9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimatedSegueDemo" */;
 			buildPhases = (
 				9B574DF91A88F83100EFCBBE /* Sources */,
 				9B574DFA1A88F83100EFCBBE /* Frameworks */,
@@ -132,9 +112,9 @@
 			);
 			dependencies = (
 			);
-			name = AnimableSegueDemo;
+			name = AnimatedSegueDemo;
 			productName = AnimableSegue;
-			productReference = 9B574DFD1A88F83100EFCBBE /* AnimableSegueDemo.app */;
+			productReference = 9B574DFD1A88F83100EFCBBE /* AnimatedSegueDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +131,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegueDemo" */;
+			buildConfigurationList = 9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimatedSegueDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -164,7 +144,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9B574DFC1A88F83100EFCBBE /* AnimableSegueDemo */,
+				9B574DFC1A88F83100EFCBBE /* AnimatedSegueDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -187,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9B574E2B1A88FF9F00EFCBBE /* AnimableSegue.m in Sources */,
+				9B574E2B1A88FF9F00EFCBBE /* AnimatedSegue.m in Sources */,
 				9B574E091A88F83100EFCBBE /* ViewController.m in Sources */,
 				9B574E061A88F83100EFCBBE /* AppDelegate.m in Sources */,
 				9B574E031A88F83100EFCBBE /* main.m in Sources */,
@@ -299,7 +279,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimableSegue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = AnimableSegueDemo;
+				PRODUCT_NAME = AnimatedSegueDemo;
 			};
 			name = Debug;
 		};
@@ -309,14 +289,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AnimableSegue/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = AnimableSegueDemo;
+				PRODUCT_NAME = AnimatedSegueDemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimableSegueDemo" */ = {
+		9B574DF81A88F83100EFCBBE /* Build configuration list for PBXProject "AnimatedSegueDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B574E1E1A88F83100EFCBBE /* Debug */,
@@ -325,13 +305,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimableSegueDemo" */ = {
+		9B574E201A88F83100EFCBBE /* Build configuration list for PBXNativeTarget "AnimatedSegueDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9B574E211A88F83100EFCBBE /* Debug */,
 				9B574E221A88F83100EFCBBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

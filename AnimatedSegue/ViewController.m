@@ -1,26 +1,26 @@
 //
 //  ViewController.m
-//  AnimableSegue
+//  AnimatedSegue
 //
 //  Created by Bruno Berisso on 2/9/15.
 //  Copyright (c) 2015 Bruno Berisso. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "AnimableSegue.h"
+#import "AnimatedSegue.h"
 
 
 /*
  
- This is an example implementation the AnimableSegueDelegate. This example has two instance of this view controller whit a ciclic navigation declared on the storyboard (the first controller present the second that present the first again). So the animation is the same on both segues. This same effect can be achieved moving the animation logic to an "animator" object that perform the animation outside the controller. This idea can be extended so you can swap the animator at run time and perform different animations for the same navigation.
+ This is an example implementation the AnimatedSegueDelegate. This example has two instance of this view controller whit a ciclic navigation declared on the storyboard (the first controller present the second that present the first again). So the animation is the same on both segues. This same effect can be achieved moving the animation logic to an "animator" object that perform the animation outside the controller. This idea can be extended so you can swap the animator at run time and perform different animations for the same navigation.
  
- For more details of how the AnimableSegue work see the README.md
+ For more details of how the AnimatedSegue work see the README.md
  
  */
 
 
 
-@interface ViewController () <AnimableSegueDelegate>
+@interface ViewController () <AnimatedSegueDelegate>
 
 @property (nonatomic, copy) void (^animationDidEnd) (void);
 @property (nonatomic, weak) UIView *destinationView;
@@ -31,16 +31,16 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
-    //Here we set the delegate of the segue how is the responsable to perform the animation. This can be any object that conforms to the AnimableSegueDelegate protocol.
+    //Here we set the delegate of the segue how is the responsable to perform the animation. This can be any object that conforms to the AnimatedSegueDelegate protocol.
     
-    if ([segue isKindOfClass:[AnimableSegue class]]) {
-        ((AnimableSegue *) segue).delegate = self;
+    if ([segue isKindOfClass:[AnimatedSegue class]]) {
+        ((AnimatedSegue *) segue).delegate = self;
     }
 }
 
-#pragma mark - AnimableSegueDelegate
+#pragma mark - AnimatedSegueDelegate
 
-//This is the core method of the AnimableSegueDelegate. Here you receive the source and destination objects that perform the segue and a callback that you need to perform when your animation end.
+//This is the core method of the AnimatedSegueDelegate. Here you receive the source and destination objects that perform the segue and a callback that you need to perform when your animation end.
 
 - (void)animateSegueFormViewController:(UIViewController *)sourceController toViewController:(UIViewController *)destinationController onComplete:(void (^)(void))onComplente {
     
@@ -85,7 +85,7 @@
     self.animationDidEnd = onComplente;
 }
 
-//This method is part of the PresentSegueDelegate protocol that is a super protocol of AnimableSegueDelgate. It allow to control how a controller will be presented. Here we are telling the segue that dismiss the visible controller _before_ present the new one. This avoid having a constantly growing list of controllers, this can produce a warning on the console about "Attempt to present <ViewController: 0xXXXXXXX> on <ViewController: 0xYYYYYY> whose view is not in the window hierarchy!".
+//This method is part of the PresentSegueDelegate protocol that is a super protocol of AnimatedSegueDelgate. It allow to control how a controller will be presented. Here we are telling the segue that dismiss the visible controller _before_ present the new one. This avoid having a constantly growing list of controllers, this can produce a warning on the console about "Attempt to present <ViewController: 0xXXXXXXX> on <ViewController: 0xYYYYYY> whose view is not in the window hierarchy!".
 - (BOOL)shouldDismissController:(UIViewController *)visibleController beforePresentViewController:(UIViewController *)viewController {
     return YES;
 }
@@ -97,7 +97,7 @@
     self.destinationView.layer.mask = NULL;
     self.destinationView = nil;
     
-    //Perform the callback to let know the AnimableSegue that we are done with the animation and procede with the presentation of the controller.
+    //Perform the callback to let know the AnimatedSegue that we are done with the animation and procede with the presentation of the controller.
     self.animationDidEnd();
     self.animationDidEnd = nil;
 }

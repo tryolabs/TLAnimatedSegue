@@ -1,16 +1,16 @@
 //
-//  TWAnimableSegue.m
+//  TWAnimatedSegue.m
 //  ttwick
 //
 //  Created by Bruno Berisso on 6/9/14.
 //  Copyright (c) 2014 Bruno Berisso. All rights reserved.
 //
 
-#import "AnimableSegue.h"
+#import "AnimatedSegue.h"
 
 
 
-@implementation AnimableSegue
+@implementation AnimatedSegue
 
 - (void)perform {
     if (self.delegate)

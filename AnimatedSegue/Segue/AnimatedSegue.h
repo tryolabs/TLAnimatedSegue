@@ -1,5 +1,5 @@
 //
-//  TWAnimableSegue.h
+//  TWAnimatedSegue.h
 //  ttwick
 //
 //  Created by Bruno Berisso on 6/9/14.
@@ -14,7 +14,7 @@
  @abstract This protocol describe the interface with an object responsable of perform the animation.
  @discussion This protocol is an extension of PresentSegueDelegate protocol that describe the interaction between a delegate and a PresentSegue object that add support for custom animated presentation.
  */
-@protocol AnimableSegueDelegate <PresentSegueDelegate>
+@protocol AnimatedSegueDelegate <PresentSegueDelegate>
 
 /**
  @abstract Perform the animation.
@@ -32,16 +32,16 @@
 
 /**
  @abstract Segue with support for custom animations.
- @discussion This segue with the AnimableSegueDelegate protocol give support to perform custom animations to present a view controller. It support UInavigationController or modal presentation by extending the PresentSegue segue.
+ @discussion This segue with the AnimatedSegueDelegate protocol give support to perform custom animations to present a view controller. It support UInavigationController or modal presentation by extending the PresentSegue segue.
  */
 
-@interface AnimableSegue : PresentSegue
+@interface AnimatedSegue : PresentSegue
 
 /**
- @abstract An object conforming to the AnimableSegueDelegate
+ @abstract An object conforming to the AnimatedSegueDelegate
  @discussion This object is the responsable of perform the actual animation between the controllers.
  */
 
-@property (nonatomic, weak) id <AnimableSegueDelegate> delegate;
+@property (nonatomic, weak) id <AnimatedSegueDelegate> delegate;
 
 @end
