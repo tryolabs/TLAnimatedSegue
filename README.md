@@ -1,4 +1,7 @@
 # TLAnimatedSegue
+[![Version](https://img.shields.io/cocoapods/v/TLAnimatedSegue.svg?style=flat)](http://cocoadocs.org/docsets/TLAnimatedSegue)
+[![License](https://img.shields.io/cocoapods/l/TLAnimatedSegue.svg?style=flat)](http://cocoadocs.org/docsets/TLAnimatedSegue)
+[![Platform](https://img.shields.io/cocoapods/p/TLAnimatedSegue.svg?style=flat)](http://cocoadocs.org/docsets/TLAnimatedSegue)
 
 ## Usage
 
