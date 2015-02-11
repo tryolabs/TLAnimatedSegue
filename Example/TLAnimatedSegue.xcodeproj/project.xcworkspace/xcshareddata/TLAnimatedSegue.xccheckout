@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BE9FB8FA-77DB-42EF-B922-64CB0D6B032A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>TLAnimatedSegue</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>4067C5AE7799249B76EF189840CA5A276BF8400B</key>
+		<string>https://github.com/tryolabs/animated-segue.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Example/TLAnimatedSegue.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>4067C5AE7799249B76EF189840CA5A276BF8400B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tryolabs/animated-segue.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>4067C5AE7799249B76EF189840CA5A276BF8400B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4067C5AE7799249B76EF189840CA5A276BF8400B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>TLAnimatedSegue</string>
+		</dict>
+	</array>
+</dict>
+</plist>

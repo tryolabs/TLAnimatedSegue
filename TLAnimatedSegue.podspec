@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TLAnimatedSegue"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "Segue for present controllers with custom animations."
   s.homepage         = "https://github.com/tryolabs/TLAnimatedSegue"
   s.license          = 'MIT'

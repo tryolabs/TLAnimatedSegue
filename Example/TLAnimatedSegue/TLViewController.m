@@ -7,7 +7,7 @@
 //
 
 #import "TLViewController.h"
-#import <TLAnimatedSegue/TLAnimatedSegue.h>
+#import "TLAnimatedSegue.h"
 
 
 /*
