@@ -23,7 +23,7 @@
  @param controller The controller that is NOT the current one.
  */
 
-- (void)transitionDidEnd:(id)controller;
+- (void)transitionDidEnd:(nonnull id)controller;
 
 @end
 
@@ -52,7 +52,7 @@
  */
 
 @optional
-- (BOOL)shouldDismissController:(UIViewController *)visibleController beforePresentViewController:(UIViewController *)viewController;
+- (BOOL)shouldDismissController:(nonnull UIViewController *)visibleController beforePresentViewController:(nonnull UIViewController *)viewController;
 
 @end
 
@@ -68,6 +68,6 @@
  @abstract An object conforming to the TLPresentSegueDelegate method.
  @discussion Must be set before this segue receive the 'perform' method call
  */
-@property (nonatomic, weak) id <TLPresentSegueDelegate> delegate;
+@property (nonatomic, weak, nullable) id <TLPresentSegueDelegate> delegate;
 
 @end

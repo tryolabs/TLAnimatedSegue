@@ -12,6 +12,8 @@
 
 @implementation TLAnimatedSegue
 
+@dynamic delegate;
+
 - (void)perform {
     if (self.delegate)
         [self.delegate animateSegueFormViewController:self.sourceViewController toViewController:self.destinationViewController onComplete:^{
