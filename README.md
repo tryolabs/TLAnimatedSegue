@@ -9,7 +9,7 @@ TLAnimatedSegue is a storyboard segue that allow you to write animated transisio
 
 The project contains two classes: `TLPresentSegue` and `TLAnimatedSegue`. The last one inherit from the first.
 
-To use this segue you need to setup it on your storyboard like any other segue. XCode detect the UIStoryboardSegue subclass you have on your project and will let you pick it right in your storyboard.
+To use this segue you need to setup it on your storyboard like any other segue. Xcode detect the UIStoryboardSegue subclass you have on your project and will let you pick it right in your storyboard.
 
 ![seguesetup](http://zippy.gfycat.com/SparseSpotlessBubblefish.gif)
 
